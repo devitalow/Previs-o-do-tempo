@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <script src="./src/scripts/script.js"></script>
+    <title>Previsão do tempo - 2.0</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#">
+        <img src="src/images/header/github-logo.png" alt="Github" />
+      </a>
+    </header>
+    <main>
+    <section>
+            <div class="container">
+                <div class="input-local">
+                    <label for="search-area">Previsão do tempo</label>
+                    <div class="busca">
+                        <input
+                        type="text"
+                        name="search-area"
+                        id="search-area"
+                        placeholder="Digite o local desejado"/>
+                        <button onclick="searchClick()"><img src="./src/images/main/icone-busca.svg" alt="search-icon"></button>
+                    </div>
+                    <span class="local-busca" id="local-busca"><strong>Armação dos Búzios</strong></span>
+                </div>
+                <div class="infos-tempo">
+                    <div class="infos-primarias">
+                        <div class="card">
+                            <span class="temperatura">Temperatura Atual</span>
+                            <span class="temperatura-valor"><strong>24º</strong></span>
+                            <span class="temp-desc">Parcialmente nublado</span>
+                            <img
+                            class="icone-temp"
+                            src="./src/images/main/icone-temp.svg"
+                            alt="Ícone de tempo"/>
+                        </div>
+                    </div>
+                </div>
+                    <div class="infos-secundarias">
+                        <div class="info-detalhes">
+                            <span class="sec-principal">Temperatura Máxima</span>
+                            <span class="temperatura-max"><strong>20º</strong></span>
+                        </div>
+                        <div class="info-detalhes">
+                            <span class="sec-principal">Temperatura Mínima</span>
+                            <span class="temperatura-min"><strong>20º</strong></span>
+                        </div>
+                        <div class="info-detalhes">
+                            <span class="sec-principal">Sensação Térmica</span>
+                            <span class="sensacao"><strong>20º</strong></span>
+                        </div>
+                        <div class="info-detalhes">
+                            <span class="sec-principal">Umidade</span>
+                            <span class="umidade"><strong>20</strong></span>
+                        </div>
+                    </div>
+              </div>
+            </div>
+    </section>
+    </main>
+
+    <footer>
+      <span>Copyright Cr @devitalow - 2024</span>
+    </footer>
+  </body>
+</html>
